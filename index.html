@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO PESSOAL</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <section id="pagina1">
+
+        <div id="Cadastro">
+            <h1>CADASTRO PESSOAL</h1>
+            <h2>Por favor, preencha seus dados no formulário.</h2>
+            <h2>Os itens com * são obrigatórios:</h2>
+
+            <form name="formulariocadastro" action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="accessKey" value="c35248f5-32c8-4e61-a7f2-3988332e1298">
+
+
+                <p class=formulario>
+                    <input id="nome" type="text" name="subject" placeholder="Informe seu nome" required="required">
+                    <label>*Nome</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="cpf" type="text" name="name" placeholder="Informe seu CPF" required="required">
+                    <label>*CPF</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="rg" type="text" name="name" placeholder="Informe seu RG" required="required">
+                    <label>*RG</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="sexo" type="text" name="name" placeholder="Informe seu sexo" required="required">
+                    <label>*Sexo</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="endereco" type="text" name="name" placeholder="Informe seu endereço" required="required">
+                    <label>*Endereço</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="numero" type="text" name="name" placeholder="Informe o número" required="required">
+                    <label>*Número</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="bairro" type="text" name="name" placeholder="Informe o bairro" required="required">
+                    <label>*Bairro</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="cidade" type="text" name="name" placeholder="Informe sua cidade" required="required">
+                    <label>*Cidade</label>
+                </p>
+                <p class=formulario>
+                    <input id="estado" type="text" name="name" placeholder="Informe seu estado" required="required">
+                    <label>*Estado</label>
+                </p>
+                <p class=formulario>
+                    <input id="cep" type="text" name="name" placeholder="Informe o CEP" required="required">
+                    <label>*CEP</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="telefone" type="text" name="name" placeholder="Informe o telefone fixo com DDD">
+                    <label>Tel fixo</label>
+                </p>
+
+                <p class=formulario>
+                    <input id="celular" type="text" name="name" placeholder="Informe o seu celular com DDD"
+                        required="required">
+                    <label>*Celular</label>
+                </p>
+
+                <p class=botao>
+                    <input id="enviar" type="submit" name="enviar" value="Enviar"
+                        onclick="return validar_formulario_cadastro()">
+                </p>
+
+
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
